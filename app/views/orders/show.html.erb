@@ -5,7 +5,8 @@
   </header>
 
   <div class="order-summary jumbotron">
-    <h4>Thank you for your order!</h4>
+    <h2>Thank you for your order!</h2>
+    <hr>
     <% @line_item.each do |item| %>
       <% @products.each do |product| %>
         <% if product.id == item.product_id %>
