@@ -1,0 +1,40 @@
+<div class="jumbotron">
+
+  <h1 class="testingClass">About Us</h1>
+  <p>We are The Jungle! We are a store like no one has ever seen before, we sell crazy stuff that no one has ever had before!</p>
+  <div class="buttonDiv">
+    <%= link_to "Shop the Jungle", products_path, class: "btn btn-primary aboutButton" %>
+  </div>
+
+  <h2 class="testingClass">Check out 2 of our best-selling products!</h2>
+
+  <div class="row">
+    <div class="col-sm-6 card-body">
+      <div class="thumbnail">
+        <%= image_tag @product1.image.thumb %>
+        <div class="caption">
+          <h3><%= @product1.name %></h3>
+          <p><%= @product1.description %></p>
+          <div class="buttonDiv">
+          <%= link_to "Shop Now!", products_path, class: "btn btn-primary aboutButton" %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 card-body">
+    <div class="thumbnail">
+      <%= image_tag @product2.image.thumb %>
+      <div class="caption">
+        <h3><%= @product2.name %></h3>
+        <p><%= @product2.description %></p>
+        <div class="buttonDiv">
+        <%= link_to "Shop Now!", products_path, class: "btn btn-primary aboutButton" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</div>

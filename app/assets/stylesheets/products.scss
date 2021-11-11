@@ -86,3 +86,32 @@ main section.products-show {
     }
   }
 }
+
+.testingClass {
+  text-align: center;
+}
+
+.aboutButton {
+  color: white;
+}
+
+.aboutButton:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.buttonDiv {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: #B5CFF8;
+}
+
+.jumbotron p {
+  font-size: 1em;
+}
+
+.jumbotron h2 {
+  margin: 30px 0;
+}
