@@ -1,2 +1,15 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>General Store Stats</h1>
+
+<div class="list-group">
+  <a href="admin/products" class="list-group-item active">
+    <h4 class="list-group-item-heading"># of Products: </h4>
+    <p class="list-group-item-text"><%= @number_of_products %></p>
+  </a>
+</div>
+
+<div class="list-group">
+  <a href="admin/products" class="list-group-item active">
+    <h4 class="list-group-item-heading"># of Categories: </h4>
+    <p class="list-group-item-text"><%= @number_of_categories %></p>
+  </a>
+</div>
