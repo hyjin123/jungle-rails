@@ -9,8 +9,8 @@ class User < ActiveRecord::Base
   has_secure_password
 
   def self.authenticate_with_credentials(email, password)
-    strippedEmail = email.strip
-    user = User.find_by_email(strippedEmail)
+    filteredEmail = email.strip.downcase
+    user = User.where("lower(email) = ?", filteredEmail).first
     if user && user.authenticate(password)
       return user
     else

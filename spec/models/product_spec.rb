@@ -6,7 +6,7 @@ RSpec.describe Product, type: :model do
 
     let(:category) {Category.new(name: "Furniture") }
     let(:product) {Product.new(name: "Rocking Chair", 
-      price_cents: 4000, 
+      price: 4000, 
       quantity: 4, 
       category: category)}
 
